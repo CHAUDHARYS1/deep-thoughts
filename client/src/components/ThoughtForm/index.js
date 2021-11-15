@@ -36,22 +36,22 @@ const ThoughtForm = () => {
           setCharacterCount(event.target.value.length);
         }
       };
-      const handleFormSubmit = async event => {
+    const handleFormSubmit = async event => {
         event.preventDefault();
-      
+        
         try {
-          // add thought to database
-          await addThought({
+            // add thought to database
+            await addThought({
             variables: { thoughtText }
-          });
-      
-          // clear form value
-          setText('');
-          setCharacterCount(0);
+            });
+        
+            // clear form value
+            setText('');
+            setCharacterCount(0);
         } catch (e) {
-          console.error(e);
+            console.error(e);
         }
-      };
+    };
   return (
     <div>
         <p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>

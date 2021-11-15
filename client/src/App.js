@@ -13,7 +13,7 @@ import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 
 import Home from './pages/Home';
-import ThoughtList from './components/ThoughtList';
+// import ThoughtList from './components/ThoughtList';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
