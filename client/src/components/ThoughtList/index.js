@@ -11,12 +11,11 @@ const ThoughtList = ({ thoughts, title }) => {
         <h3>{title}</h3>
         {thoughts &&
           thoughts.map(thought => (
-            <div key={thought._id} className="card mb-3">
+            <div key={thought._id} className="card bg-tertiary mb-3">
               <p className="card-header">
-                <Link to={`/profile/${thought.username}`} style={{ fontWeight: 700 }} className="text-light"> 
-                  {thought.username}
-                </Link>
-                thought on {thought.createdAt}
+                <Link to={`/profile/${thought.username}`} style={{ fontWeight: 700 }} className="text-dark"> 
+                  {thought.username} 
+                </Link> posted his thought on {thought.createdAt}
               </p>
               <div className="card-body">
                 <Link to={`/thought/${thought._id}`}>

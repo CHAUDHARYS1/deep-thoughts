@@ -1,7 +1,7 @@
 :root {
-  --primary: #497573;
-  --secondary: #99f7f2;
-  --tertiary: #b2c2c1;
+  --primary: #FB6376;
+  --secondary: #F1E9DA;
+  --tertiary: #273043;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
   --dark: #6c7575;
@@ -26,12 +26,11 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: calibri;
   font-weight: 400;
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-color: #f3fffee1;
 }
 
 h1,
@@ -40,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Karla', sans-serif;
+  font-family:Calibri;
   font-weight: 700;
   margin: 5px 0;
   line-height: 1.25;
@@ -134,16 +133,15 @@ nav a:hover {
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
   border-radius: var(--border-radius);
   background-color: var(--light);
-  color: var(--dark);
+  color: var(--light);
 }
 
 .card-header {
-  color: var(--secondary);
+  color: var(--light);
   margin: 0;
-  background-color: var(--dark);
+  background-color: var(--tertiary);
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
